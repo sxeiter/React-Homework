@@ -4,13 +4,11 @@ import Text from './components/Text/Text';
 import Button from './components/Button/Button';
 
 function App() {
-  
-
 	return (
 		<>
 			<Title />
 			<Text />
-			<Button />
+			<Button>Искать</Button>
 		</>
 
 	);
