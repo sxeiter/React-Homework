@@ -46,12 +46,14 @@
   font-weight: 600;
   line-height: 24px;
   letter-spacing: 0.32px;
+  padding-left: 8px;
 }
 
 .card-text {
   color: var(--Primary-400, #7b6ef6);
   display: flex;
   align-items: center;
+  padding-left: 8px;
   gap: 8px;
   font-size: 16px;
   font-style: normal;
