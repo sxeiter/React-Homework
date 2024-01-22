@@ -9,20 +9,18 @@ function SearchForm() {
 
 	const inputChange = (e) => {
 		setInputData(e.target.value);
-		console.log(inputData);
 	};
 
 	const addItem = (e) => {
 		e.preventDefault();
 		const formData = new FormData(e.target);
 		const formProps = Object.fromEntries(formData);
-		console.log(formProps);
 	};
 
 	return(
 		<form className='form-input' onSubmit={addItem}>
 			<label className='input-container'>
-				<img src='Search.svg'/>
+				<img src='Search.svg' alt='Иконка поиска'/>
 				<input type="text" className="input" placeholder="Введите название" value={inputData} onChange={inputChange}/>
 			</label>
 			

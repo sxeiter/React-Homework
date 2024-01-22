@@ -6,7 +6,7 @@ import Body from './layout/Body/Body';
 import Navigation from './components/Navigation/Navigation';
 import Navbar from './layout/Navbar/Navbar';
 import Search from './layout/Search/Search';
-import SearchForm from './components/Input/SearchForm';
+import SearchForm from './components/SearchForm/SearchForm';
 import CinemaCard from './components/CinemaCard/CinemaCard';
 
 

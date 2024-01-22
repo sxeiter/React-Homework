@@ -1,6 +1,6 @@
 import './CinemaCard.css';
 
-const data = [
+const FILMS_LIST = [
 	{
 		id: 1,
 		count: 324,
@@ -64,16 +64,16 @@ function CinemaCard() {
 	return (
 		
 		<div className='grid-container'>
-			{data.map((item) => (
+			{FILMS_LIST.map((item) => (
 				<div className='card' key={item.id}>
 					<div className='card-count'>
-						<img src='star.svg' alt='star' />
+						<img src='star.svg' alt='иконка звездочки' />
 						{item.count}
 					</div>
-					<img className='card-img' src={item.image} alt='movie' />
+					<img className='card-img' src={item.image} alt='постер фильма' />
 					<h2 className='card-title'>{item.title}</h2>
 					<p className='card-text'>
-						<img src='like.svg'/>
+						<img src='like.svg' alt='Количество лайков'/>
 						{item.text}
 					</p>
 				</div>
