@@ -8,4 +8,11 @@
   border: 2px solid var(--Primary-400, #7b6ef6);
   background: var(--Primary-400, #7b6ef6);
   color: #ffffff;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  height: 56px;
+}
+
+.accent:hover {
+  background: #646cff;
 }

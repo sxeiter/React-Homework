@@ -1,17 +1,34 @@
 import './App.css';
 import Title from './components/Title/Title';
 import Text from './components/Text/Text';
-import Button from './components/Button/Button';
+import Header from './components/Header/Header';
+import Body from './layout/Body/Body';
+import Navigation from './components/Navigation/Navigation';
+import Navbar from './layout/Navbar/Navbar';
+import Search from './layout/Search/Search';
+import SearchForm from './components/SearchForm/SearchForm';
+import CinemaCard from './components/CinemaCard/CinemaCard';
+
+
 
 function App() {
-  
-
 	return (
-		<>
-			<Title />
-			<Text />
-			<Button />
-		</>
+		<div className='app'>
+			<Navbar>
+				<Header />
+				<Navigation />
+			</Navbar>
+			<Search>
+				<Title />
+				<Text />
+				<SearchForm />
+			</Search>
+			<Body>
+				<CinemaCard />
+			</Body>
+			
+
+		</div>
 
 	);
 }
