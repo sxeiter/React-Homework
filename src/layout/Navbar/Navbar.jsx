@@ -1,8 +1,8 @@
-import './Navbar.css';
+import styles from './Navbar.module.css';
 
 function Navbar({children}) {
 	return(
-		<div className='navbar'>
+		<div className={styles.navbar}>
 			{children}
 		</div>
 	);

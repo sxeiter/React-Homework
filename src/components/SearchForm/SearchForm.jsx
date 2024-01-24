@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Button from '../Button/Button';
-import './SearchForm.css';
+import styles from './SearchForm.module.css';
 
 
 
@@ -18,10 +18,10 @@ function SearchForm() {
 	};
 
 	return(
-		<form className='form-input' onSubmit={addItem}>
-			<label className='input-container'>
+		<form className={styles['form-input']} onSubmit={addItem}>
+			<label className={styles['input-container']}>
 				<img src='Search.svg' alt='Иконка поиска'/>
-				<input type="text" className="input" placeholder="Введите название" value={inputData} onChange={inputChange}/>
+				<input type="text" className={styles.input} placeholder="Введите название" value={inputData} onChange={inputChange}/>
 			</label>
 			
 			<Button text='Искать'/>

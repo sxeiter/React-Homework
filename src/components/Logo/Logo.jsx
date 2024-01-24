@@ -1,7 +1,7 @@
-import './Logo.css';
+import styles from './Logo.module.css';
 
 function Logo() {
-	return <img className='logo' src='Logo.svg' alt='Логотип' />;
+	return <img className={styles.logo} src='Logo.svg' alt='Логотип' />;
 }
 
 export default Logo;

@@ -1,4 +1,4 @@
-import './CinemaCard.css';
+import styles from './CinemaCard.module.css';
 
 const FILMS_LIST = [
 	{
@@ -63,16 +63,16 @@ const FILMS_LIST = [
 function CinemaCard() {
 	return (
 		
-		<div className='grid-container'>
+		<div className={styles['grid-container']}>
 			{FILMS_LIST.map((item) => (
-				<div className='card' key={item.id}>
-					<div className='card-count'>
+				<div className={styles.card} key={item.id}>
+					<div className={styles['card-count']}>
 						<img src='star.svg' alt='иконка звездочки' />
 						{item.count}
 					</div>
-					<img className='card-img' src={item.image} alt='постер фильма' />
-					<h2 className='card-title'>{item.title}</h2>
-					<p className='card-text'>
+					<img className={styles['card-img']} src={item.image} alt='постер фильма' />
+					<h2 className={styles['card-title']}>{item.title}</h2>
+					<p className={styles['card-text']}>
 						<img src='like.svg' alt='Количество лайков'/>
 						{item.text}
 					</p>
